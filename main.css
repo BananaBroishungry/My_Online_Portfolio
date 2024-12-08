@@ -1,0 +1,677 @@
+html {
+  scroll-behavior: smooth;
+}
+
+.Introduction {
+    margin-top: 105px;
+    position: relative; 
+    display: flex; 
+    flex-direction: column; 
+    align-items: flex-start; 
+    padding: 40px;
+    background-color: #f4f4f4;
+    min-height: 600px; 
+    height: auto; 
+    text-align: left;
+    border-radius: 8px;
+    box-sizing: border-box;
+    overflow: hidden;
+  }
+  
+  
+  .intro-greeting {
+    margin-left: 400px;
+    margin-top: 50px; 
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 20px;
+    max-width: 50%; 
+    font-family: Kugile, sans-serif;
+    animation: slideDownFadeIn 0.5s ease-in-out;
+  }
+
+  span{
+    color: #b74b4b;
+}
+  
+
+  .intro-description {
+    font-size: 1.6rem;
+    font-family: sans-serif;
+    line-height: 1.5;
+    max-width: 45%;
+    margin-left: 400px; 
+    animation: slideUpFadeIn 0.5s ease-in-out;
+    animation-delay: 0.6s; 
+    animation-fill-mode: both; 
+  }
+  
+ 
+  .my-picture {
+    position: absolute; 
+    top: 80px;
+    left: 65px; 
+    width: 280px; 
+    height: auto; 
+    max-width: 100%; 
+    padding: 7px;
+    box-sizing: border-box;
+    z-index: 1;
+}
+
+.typing-animation {
+  font-size: 34px;
+  font-weight: 600;
+  min-width: 280px;
+  display: inline-block;
+}
+
+.typing-animation span {
+  position: relative;
+  line-height: 1;
+}
+
+.typing-animation span::before {
+  content: "";
+  animation: none;
+}
+
+.typing-animation span.typing::before {
+  content: attr(data-role);
+  color: #b74b4b;
+  animation: words 7s steps(10) 1 normal both; /* Adjust timing and steps for your needs */
+}
+
+.typing-animation span::after {
+  content: "";
+  background-color: #f4f4f4;
+  position: absolute;
+  width: 3px;
+  height: 100%;
+  border-left: 3px solid #f4f4f4;
+  animation: cursor 0.6s infinite;
+  top: 0;
+  right: -3px;
+}
+
+ 
+.profile-image {
+  width: 100%; 
+  height: 100%; 
+  border-radius: 7%; 
+  border: 5px solid #fff; 
+  animation: popUp 0.5s ease-out; 
+  animation-delay: 1s; 
+  animation-fill-mode: both; 
+  box-shadow: 0 0 25px solid #b74b4b;
+  cursor: pointer;
+  }
+
+.graphic-monitor {
+  position: absolute; 
+  top: 10px; 
+  left: 86%; 
+  transform: translateX(-50%); 
+  max-width: 100%; 
+  height: auto; 
+  z-index: 1;
+}
+
+#graphic-img {
+  transition: opacity 0.5s ease-in-out; 
+}
+
+.Card-1 {
+  position: relative;
+  margin-left: 55px;
+  max-width: 600px;
+  max-height: auto;
+  flex: 1;
+  /* border: 1px solid #ddd ;
+  border-radius: 8px; */
+  padding: 20px;
+  /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); */
+  text-align: left;
+  line-height: 2.2rem;
+  font-size: 1.3rem;
+  left: 225px;
+}
+
+.Card-2 {
+  position: relative;
+  bottom: 720px;
+  margin-left: 55px;
+  max-width: 600px;
+  max-height: auto;
+  flex: 1;
+  /* border: 1px solid #ddd ;
+  border-radius: 8px; */
+  padding: 20px;
+  /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); */
+  text-align: left;
+  line-height: 2.2rem;
+  font-size: 1.3rem;
+  left: 225px;
+}
+
+.About-me {
+  margin-left: 300px;
+  margin-top: 300px;
+  font-size: 3rem;
+  font-family: Kugile;
+  color: #b74b4b;
+}
+
+.about-description {
+  position: relative;
+  font-family: Kugile;
+  font-size: 1.3rem;
+  line-height: 35px;
+  max-width: 65%;
+  color: black;
+  bottom: 70px;
+  
+}
+
+.Pine-tree-gif {
+  position: relative;
+  bottom: 630px;
+  left: 670px;
+  height: 900px;
+  width: 600px;
+  animation: popUp 0.5s ease-out; 
+  animation-delay: 1s; 
+  animation-fill-mode: both; 
+}
+
+.Resume {
+  position: relative;
+  margin-bottom: 100px;
+  bottom: 900px;
+  font-size: 3rem;
+  font-family: Kugile;
+  color: #b74b4b;
+  line-height: 115px;
+}
+
+.My-Resume {
+  position: relative;
+  bottom: 900px;
+  height: auto;
+  width: 1100px;
+}
+
+.My-work {
+  position: relative;
+  margin-left: 300px;
+  bottom: 800px;
+  font-size: 3rem;
+  font-family: Kugile;
+  color: #b74b4b;
+  line-height: 130px;
+}
+
+.work-description { 
+  position: relative;
+  font-family: Kugile;
+  font-size: 1.3rem;
+  line-height: 35px;
+  max-width: 65%;
+  color: black;
+  bottom: 70px;
+}
+
+.resume-link {
+  position: relative;
+  left: 260px;
+  
+  padding: 5px 5px;
+  background-color: #b74b4b;
+  color: white;
+  font-size: 16px;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.resume-link:hover {
+  background-color: #9a3a3a;
+}
+
+.card-container {
+  bottom: 100px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px; /* Space between cards */
+  justify-content: center; /* Center align cards in the container */
+  position: relative; /* Ensure relative positioning for contained elements */
+  transition: all 0.3s ease; 
+  height: auto;
+}
+
+.card {
+  flex: 0 1 350px;
+  position: relative;
+  left: 300px;
+  bottom: 700px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: all 0.3s ease;
+  width: 350px;
+  height: 400px;
+  transition: all 0.3s ease; 
+  z-index: 1;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.card-content {
+  padding: 20px;
+  text-align: left;
+}
+
+.card-content h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.card-content p {
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 15px;
+}
+
+.card-btn {
+  display: inline-block;
+  padding: 10px 15px;
+  background-color: #0078ff;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  transition: background-color 0.3s;
+}
+
+.card-btn:hover {
+  background-color: #0056b3;
+}
+
+.card-details {
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease, opacity 0.3s ease;
+}
+
+.card.active {
+  height: auto; 
+  transition: height 0.3s ease-in-out;
+}
+
+
+.card.active .card-content {
+  display: block; 
+}
+
+
+.card.active .card-details {
+  max-height: 200px; 
+  opacity: 1;
+  padding: 10px; 
+}
+
+
+.card .card-btn {
+  margin-top: 10px;
+  background-color: #0078ff;
+}
+
+.card .card-btn:hover {
+  background-color: #0056b3;
+}
+
+.card.active {
+  transition: transform 0.3s ease-in-out, height 0.3s ease-in-out;
+  transform: scale(1.05); 
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.card .card-btn:active {
+  background-color: #003f8a;
+}
+
+.card.expanded {
+  flex: 0 1 100%; /* Makes the expanded card take full width of the container */
+  width: 100%; /* Ensure the expanded card takes up the entire row */
+  height: 600px; /* Adjust vertical height */
+  z-index: 10; /* Bring the expanded card to the front */
+  transform: scale(1); /* No scaling needed */
+  transition: all 0.3s ease;
+}
+
+
+.card-container .card.expanded img {
+  height: 150px; 
+}
+
+.card-container .card.expanded .card-content {
+  display: block;
+} 
+
+.card-container .card {
+  visibility: visible;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+ .card {
+  visibility: visible;
+  position: relative;
+  z-index: 1;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, height 0.3s ease-in-out;
+  margin-bottom: 20px; /* Adjust margin to space cards */
+  /* width: 350px;
+  height: 400px; */
+  /* Set normal width and height for non-expanded cards */
+}
+
+.card-container .card:not(.expanded) {
+  visibility: visible; /* Ensure they are visible by default */
+  position: relative; /* Normal layout position */
+}
+
+.card-container .card.expanded {
+  width: 1150px; 
+  height: 800px;
+  z-index: 10;
+  transform: scale(1.05);
+  position: relative; /* Ensure expanded card stays in position */
+}
+
+.card-container .card:not(.expanded) {
+  visibility: visible;
+  position: relative;
+  z-index: 1;
+}
+
+.card-container .card.hidden {
+  visibility: hidden;
+  position: absolute;
+  left: -9999px;
+  top: -9999px;
+}
+
+.card-container.expanding .card:not(.expanded) {
+  visibility: hidden; /* Hide non-expanded cards */
+  position: absolute; /* Remove from layout flow */
+  left: -9999px; /* Push the hidden cards off-screen */
+  top: -9999px;
+}
+
+.My-accomplishments {
+  position: relative;
+  margin-left: 300px;
+  
+  bottom: 700px;
+  font-size: 3rem;
+  font-family: Kugile;
+  color: #b74b4b;
+  line-height: 115px;
+}
+
+.accomplishments-description { 
+  position: relative;
+  font-family: Kugile;
+  font-size: 1.3rem;
+  line-height: 35px;
+  max-width: 65%;
+  color: black;
+  bottom: 70px;
+}
+
+.carousel {
+  left: 670px;
+  bottom: 500px;
+  width: 100%;
+  max-width: 600px;
+  margin: auto;
+  overflow: hidden;
+  position: relative;
+}
+
+.carousel-item {
+  display: none; /* Hide items by default */
+  opacity: 0; /* Initially hide the images */
+  transition: opacity 1s ease-in-out; /* Smooth fade effect */
+  border-radius: 25%;
+}
+
+.carousel-item img {
+  width: 100%; /* You can adjust this or set it to a specific value, e.g., 500px */
+  height: 300px; /* Set a fixed height for the image */
+  object-fit: cover; /* Ensures the image covers the area without stretching */
+  border-radius: 10%;
+}
+
+.carousel-item.active {
+  display: block; /* Show active item */
+  opacity: 1; /* Fade-in effect */
+}
+
+.carousel-prev, .carousel-next {
+  position: absolute;
+  bottom: 20px; /* Position buttons at the bottom */
+  font-size: 2.5rem;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  z-index: 1;  /* Ensure buttons are on top */
+}
+
+.carousel-prev {
+  left: 650px;
+  bottom: 645px;
+}
+
+.carousel-next {
+  left: 1260px;
+  bottom: 645px;
+}
+
+.Contacts {
+  position: relative;
+  margin-left: 300px;
+  
+  bottom: 1000px;
+  font-size: 3rem;
+  font-family: Kugile;
+  color: #b74b4b;
+  line-height: 115px;
+}
+
+.contact-section {
+  background-color: #f4f4f4;
+  padding: 20px 0;
+  text-align: center;
+  position: relative;
+}
+
+.contact-list {
+  position: relative;
+  left: 120px;
+  bottom: 1000px;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 75px; /* Space between items */
+}
+
+.contact-item {
+  text-decoration: none;
+  font-size: 2rem;
+  color: #333;
+  font-family: Kugile, sans-serif;
+  transition: color 0.3s ease;
+}
+
+.contact-item:hover {
+  color: #b74b4b; /* Hover color, adjust as per your theme */
+}
+
+  @media (max-width: 768px) {
+    .card-container {
+      flex-direction: column; 
+    }
+  }
+
+  @font-face {
+    font-family: 'Kugile'; 
+    src: url('Fonts/Kugile_Demo.ttf') format('truetype'); 
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  .Top-Nav-bar {
+    position: fixed; 
+    top: 0;
+    left: 0;
+    width: 100%; 
+    height: 75px;
+    background-color: #333; 
+    padding: 10px 20px; 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    z-index: 1000; 
+    font-family: Kugile;
+  }
+
+ 
+  .left-links {
+    font-size: 2rem;
+    flex: 0 1 auto; 
+  }
+
+  .center-links {
+    font-size: 1.5rem;
+    display: flex; 
+    gap: 15px; 
+    margin: 0 auto;
+    flex-grow: 1; 
+    justify-content: center;
+  }
+
+  .right-links {
+    font-size: 1.5rem;
+    margin-right: 25px;
+    display: flex; 
+    flex: 0 1;
+  }
+
+  
+  .Top-Nav-bar a {
+    color: white; 
+    text-decoration: none; 
+    margin: 0 15px; 
+    transition: color 0.3s ease; 
+  }
+
+  
+  .Top-Nav-bar a:hover {
+    color: #ff6347; 
+  }
+
+  /* Mobile responsiveness */
+  @media (max-width: 768px) {
+    .Top-Nav-bar {
+      flex-direction: column; 
+      align-items: flex-start; 
+      padding: 15px;
+    }
+    .left-links, .right-links {
+      flex: none; 
+    }
+    .Top-Nav-bar a {
+      margin: 10px 0; 
+    }
+  }
+
+  @keyframes slideDownFadeIn {
+    from {
+      opacity: 0; 
+      transform: translateY(-20px); 
+    }
+    to {
+      opacity: 1; 
+      transform: translateY(0); 
+    }
+  }
+  
+  /* Keyframes for the intro description */
+  @keyframes slideUpFadeIn {
+    from {
+      opacity: 0; 
+      transform: translateY(20px); /
+    }
+    to {
+      opacity: 1; 
+      transform: translateY(0); 
+    }
+  }
+  
+  /* Keyframes for the image */
+  @keyframes popUp {
+    0% {
+        transform: scale(0.5); 
+        opacity: 0; 
+    }
+    60% {
+        transform: scale(1.1); 
+        opacity: 1; 
+    }
+    100% {
+        transform: scale(1); 
+    }
+}
+
+@keyframes words {
+  0% {
+      width: 0;
+  }
+  100% {
+      width: 100%;
+  }
+}
+
+@keyframes cursor {
+  0% {
+      border-color: transparent;
+  }
+  50% {
+      border-color: #b74b4b;
+  }
+  100% {
+      border-color: transparent;
+  }
+}

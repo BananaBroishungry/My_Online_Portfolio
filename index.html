@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightbox2@2.11.3/dist/css/lightbox.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/lightbox2@2.11.3/dist/js/lightbox.min.js"></script>
+    <title>My Online Portfolio</title>
+</head>
+<body>
+
+    <nav class="Top-Nav-bar">
+        <div class="left-links">
+            <a href="#Home">My Portfolio</a>
+        </div>
+        <div class="center-links">
+            <a href="#Resume">My resume</a>
+            <a href="#About-me">About me</a>
+            <a href="#My-work">My work</a>
+            <a href="#Accomplishments">Accomplishments</a>
+        </div>
+        <div class="right-links">
+            <a href="#Contacts">Contacts</a>
+        </div>
+    </nav>
+
+    <section class="Introduction" id="Home">
+
+        <div class="intro-greeting">
+            <h1>Hi, <span>I'm Ralph</span></h1>
+            <h2 class="typing-animation">I'm a <span></span></h2>
+        </div>
+
+        <div class="intro-description">
+            <p>I'm a <span><b>Computer Science student</b></span> from Baguio City, Philippines. Feel free to explore my portfolio to see some of my work or reach out to me for collaborations!"</p>
+        </div>
+
+        <div class="my-picture">
+            <img src="Pictures/Me.jpg" alt="My picture" class="profile-image">
+        </div>
+
+        <div class="graphic-monitor">
+            <img src="Gifs/Coding.gif" alt="Monitor Graphic" id="graphic-img">
+        </div>
+
+        <div class="About-me" id="About-me">
+            <h1>About me</h1>
+            <h3 class="about-description">I'm a <span><b>Developer</b></span>. I specialize in building responsive websites and creating software solutions, while also pursuing my love for <span><b>music</b></span> and <span><b>photography</b></span>.</h3>
+        </div>
+
+        <section class="Card-1">
+            <p>Growing up in the vibrant city of Baguio, I discovered my love for music, photography, and technology early on.
+            I started playing guitar and capturing life through my camera as a kid, but it was at 11 years old, during a training
+            program at the Baguio College of Technology, that I found my passion for coding. Learning HTML alongside productivity
+            tools like MS Word and Excel ignited my curiosity about building things digitally.Now a Computer Science student,
+            I'm blending my creativity with tech—whether it's through music, photography, or programming. For me, it's all about
+            creating and sharing something meaningful while staying true to my roots.</p>   
+        
+        <div>
+            <img src="Gifs/Pine Tree.gif" alt="Pine Tree Graphic" class="Pine-tree-gif">
+        </div>
+
+        <div class="Resume" id="Resume">
+            <h1>My Resume</h1>
+        </div>
+
+        <div>
+            <img src="Pictures/My-Resume.jpg" alt="Monitor Graphic" id="graphic-img" class="My-Resume">
+        </div>
+             
+            </section>
+
+        <div class="My-work" id="My-work">
+            <h1>My work</h1>
+            <h3 class="work-description">I collaborate with passionate individuals to create innovative and accessible websites and products.
+            With a background in Computer Science and a deep love for both technology and creativity, I've worked on a variety of projects
+            that blend my skills in coding, music, and photography. From building responsive websites to exploring the intersection of
+            technology and artistry, my goal is to contribute to a brighter, more user-friendly web. I'm always eager to work on projects
+            that inspire, challenge, and push the boundaries of what's possible.</h3>
+        </div>
+
+        <div class="card-container">
+            <!-- Developer Card -->
+            <div class="card" id="developer-card">
+              <img src="Pictures/Coding-image.jpg" alt="Developer Work">
+              <div class="card-content">
+                <h3>Developer</h3>
+                <p>Check out my apps, websites, and coding projects.</p>
+                <a href="javascript:void(0)" class="card-btn" onclick="toggleCard(this)">View Projects</a>
+                <div class="card-details">
+                  <ul>
+                    <li>Project 1: Web App</li>
+                    <li>Project 2: E-commerce Website</li>
+                    <li>Project 3: Portfolio Website</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          
+            <!-- Musician Card -->
+            <div class="card" id="musician-card">
+              <img src="Pictures/The-backseat-lovers.jpg" alt="Musician Work">
+              <div class="card-content">
+                <h3>Musician</h3>
+                <p>Explore my guitar performances and compositions.</p>
+                <a href="javascript:void(0)" class="card-btn" onclick="toggleCard(this)">Listen Now</a>
+                <div class="card-details">
+                  <ul>
+                    <li>Track 1: Acoustic Guitar Cover</li>
+                    <li>Track 2: Original Composition</li>
+                    <li>Track 3: Music Production</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          
+            <!-- Photographer Card -->
+            <div class="card" id="photographer-card">
+              <img src="Pictures/Sunset-1.jpg" alt="Photographer Work">
+              <div class="card-content">
+                <h3>Photographer</h3>
+                <p>Discover my curated photography portfolio.</p>
+                <a href="javascript:void(0)" class="card-btn" onclick="toggleCard(this)">View Gallery</a>
+                <div class="card-details">
+                  <ul>
+                    <li>Photo 1: Landscape</li>
+                    <li>Photo 2: Urban Photography</li>
+                    <li>Photo 3: Portraits</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="My-accomplishments" id="Accomplishments">
+            <h1>My accomplishments</h1>
+            <h3 class="accomplishments-description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Error repudiandae quas odit? Ad numquam aliquid soluta deleniti voluptate dolores, consequatur totam eligendi quos illo consequuntur tempore maxime tenetur pariatur at.</h3>
+        </div>
+
+        <section class="Card-2">
+            <ul>
+                <li><strong>IoT-based Smart Parking System:</strong> Placed 4th in 'Best Research' category and published nationally and internationally.</li>
+                <br>
+                <li><strong>Sumobot Competition:</strong> Champion and winner of Best Robot Design in a regional sumobot competition, working with a partner to lead the project using Arduino technology.</li>
+                <br>
+                <li><strong>Certifications:</strong> Office Productivity & Multimedia certification (MS Word, Excel, HTML) at age 11.</li>
+                <br>
+                <li><strong>Community Engagement:</strong> Organized a community seminar on the importance of cybersecurity, reaching over 200 local residents and educating them on safe internet practices and digital security measures.</li>
+                <br>
+                <li><strong>Hackathons:</strong> Participated in a hackathon where the team developed an innovative solution for improving local community infrastructure, earning recognition for creativity.</li>
+              </ul>
+
+              <div class="carousel">
+                <div class="carousel-item active">
+                  <img src="Pictures/BCT-Certificate.jpg" alt="Image 1">
+                </div>
+                <div class="carousel-item">
+                  <img src="Pictures/Certificate.jpg" alt="Image 2">
+                </div>
+                <div class="carousel-item">
+                  <img src="Pictures/SER-LADY-OF-GLORY.jpg" alt="Image 3">
+                </div>
+              </div>
+              
+              <button class="carousel-prev" onclick="prevSlide()">&#10094;</button>
+              <button class="carousel-next" onclick="nextSlide()">&#10095;</button>
+        </section>
+
+        <div class="Contacts" id="Contacts">
+            <h1>Contacts</h1>
+        </div>
+
+        <div class="contact-section">
+            <ul class="contact-list">
+              <li><a href="https://www.linkedin.com" target="_blank" class="contact-item"><i class="fab fa-linkedin"></i> LinkedIn</a></li>
+              <li><a href="https://github.com" target="_blank" class="contact-item"><i class="fab fa-github"></i> GitHub</a></li>
+              <li><a href="https://instagram.com" target="_blank" class="contact-item"><i class="fab fa-instagram"></i> Instagram</a></li>
+              <li><a href="tel:+1234567890" class="contact-item"><i class="fas fa-phone-alt"></i> +1 (234) 567-890</a></li>
+              <li><a href="mailto:someone@example.com" class="contact-item"><i class="fas fa-envelope"></i> someone@example.com</a></li>
+            </ul>
+          </div>
+    </section> 
+    
+    
+    
+
+    <script src="Card.js" defer></script>
+    <script src="Carousel.js" defer></script>
+    <script src="Gif-switching.js" defer></script>
+    
+</body>
+</html>
